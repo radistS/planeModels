@@ -27,17 +27,18 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
   padding:4px 14px 12px;box-shadow:0 10px 18px rgba(0,0,0,.18);font-size:14px;line-height:1.45;
   opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .2s,transform .2s,visibility .2s}
 .details p{margin:6px 0} .details b{margin-right:4px} .details a{color:#1a5fb4;text-decoration:none}
-.card:hover,.card:focus-within,.card.open{z-index:5;box-shadow:0 10px 18px rgba(0,0,0,.18);transform:translateY(-2px)}
-.card:hover .details,.card:focus-within .details,.card.open .details{opacity:1;visibility:visible;transform:none}
+.card{cursor:pointer} .card:hover{box-shadow:0 4px 10px rgba(0,0,0,.14)}
+.card.open{z-index:5;box-shadow:0 10px 18px rgba(0,0,0,.18);transform:translateY(-2px)}
+.card.open .details{opacity:1;visibility:visible;transform:none}
 </style></head><body data-lang="uk">
 <header><div class="top">
 <h1><span class="uk">Колекція моделей літаків 1:500</span><span class="en">1:500 Aircraft Model Collection</span></h1>
 <div class="langs"><button data-l="uk">UA</button><button data-l="en">EN</button></div></div>
-<p><span class="uk">57 колекційних моделей. Наведіть на картку, щоб побачити подробиці.</span>
-<span class="en">57 die-cast airliner models. Hover over a card for details.</span></p>
+<p><span class="uk">57 колекційних моделей. Натисніть на картку, щоб побачити подробиці.</span>
+<span class="en">57 die-cast airliner models. Click a card for details.</span></p>
 <input id="q"></header>
 <main id="grid">
-<article class="card" tabindex="0" data-search="aeroflot airbus a310-300 f-ogqr herpa · 1:500 · 518185">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="aeroflot airbus a310-300 f-ogqr herpa · 1:500 · 518185">
   <img src="img/518185_Aeroflot_A310-300_Interim.jpg" alt="Aeroflot Airbus A310-300" loading="lazy">
   <div class="face">
     <h2>Airbus A310-300 · F-OGQR</h2>
@@ -52,7 +53,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/518185_Aeroflot_A310-300_Interim.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="rusline airbus a319 vp-bdy herpa · 1:500 · 523776">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="rusline airbus a319 vp-bdy herpa · 1:500 · 523776">
   <img src="img/523776_RusLine_A319.jpg" alt="RusLine Airbus A319" loading="lazy">
   <div class="face">
     <h2>Airbus A319 · VP-BDY</h2>
@@ -67,7 +68,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/523776_RusLine_A319.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="aeroflot airbus a320-200 vp-bzp herpa · 1:500 · 524407">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="aeroflot airbus a320-200 vp-bzp herpa · 1:500 · 524407">
   <img src="img/524407_Aeroflot_A320_Sochi2014.jpg" alt="Aeroflot Airbus A320-200" loading="lazy">
   <div class="face">
     <h2>Airbus A320-200 · VP-BZP</h2>
@@ -82,7 +83,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/524407_Aeroflot_A320_Sochi2014.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="aeroflot airbus a320-200 vp-bnt herpa · 1:500 · 525930">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="aeroflot airbus a320-200 vp-bnt herpa · 1:500 · 525930">
   <img src="img/525930_Aeroflot_A320_Retrojet.jpg" alt="Aeroflot Airbus A320-200" loading="lazy">
   <div class="face">
     <h2>Airbus A320-200 · VP-BNT</h2>
@@ -97,7 +98,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/525930_Aeroflot_A320_Retrojet.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="donbassaero airbus a321 ur-daf herpa · 1:500 · 520751">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="donbassaero airbus a321 ur-daf herpa · 1:500 · 520751">
   <img src="img/520751_DonbassAero_A321.jpg" alt="DonbassAero Airbus A321" loading="lazy">
   <div class="face">
     <h2>Airbus A321 · UR-DAF</h2>
@@ -112,7 +113,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/520751_DonbassAero_A321.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="windrose airlines airbus a330-200 ur-wrq sky500 · 1:500 · 0770wr">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="windrose airlines airbus a330-200 ur-wrq sky500 · 1:500 · 0770wr">
   <img src="img/0770WR_Windrose_A330-200.jpg" alt="Windrose Airlines Airbus A330-200" loading="lazy">
   <div class="face">
     <h2>Airbus A330-200 · UR-WRQ</h2>
@@ -127,7 +128,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/0770WR_Windrose_A330-200.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="airasia x airbus a340-300 9m-xac sky500 · 1:500 · 0719as">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="airasia x airbus a340-300 9m-xac sky500 · 1:500 · 0719as">
   <img src="img/0719AS_AirAsiaX_A340-300_Raiders.jpg" alt="AirAsia X Airbus A340-300" loading="lazy">
   <div class="face">
     <h2>Airbus A340-300 · 9M-XAC</h2>
@@ -142,7 +143,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/0719AS_AirAsiaX_A340-300_Raiders.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="lufthansa airbus a340-300 d-aigs herpa · 1:500 · 507509">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="lufthansa airbus a340-300 d-aigs herpa · 1:500 · 507509">
   <img src="img/507509_Lufthansa_A340-300_WorldCup2006.jpg" alt="Lufthansa Airbus A340-300" loading="lazy">
   <div class="face">
     <h2>Airbus A340-300 · D-AIGS</h2>
@@ -157,7 +158,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/507509_Lufthansa_A340-300_WorldCup2006.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="lufthansa airbus a340-600 d-aihh herpa · 1:500 · 507417">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="lufthansa airbus a340-600 d-aihh herpa · 1:500 · 507417">
   <img src="img/507417_Lufthansa_A340-600_Wiesbaden.jpg" alt="Lufthansa Airbus A340-600" loading="lazy">
   <div class="face">
     <h2>Airbus A340-600 · D-AIHH</h2>
@@ -172,7 +173,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/507417_Lufthansa_A340-600_Wiesbaden.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="virgin atlantic airbus a340-600 g-veil sky500 · 1:500 · 0738va">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="virgin atlantic airbus a340-600 g-veil sky500 · 1:500 · 0738va">
   <img src="img/0738VA_Virgin_A340-600.jpg" alt="Virgin Atlantic Airbus A340-600" loading="lazy">
   <div class="face">
     <h2>Airbus A340-600 · G-VEIL</h2>
@@ -187,7 +188,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/0738VA_Virgin_A340-600.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="airbus (house) airbus a350-900 xwb f-wwcf herpa · 1:500 · 528801">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="airbus (house) airbus a350-900 xwb f-wwcf herpa · 1:500 · 528801">
   <img src="img/528801_Airbus_A350-900_Carbon.jpg" alt="Airbus (House) Airbus A350-900 XWB" loading="lazy">
   <div class="face">
     <h2>Airbus A350-900 XWB · F-WWCF</h2>
@@ -202,7 +203,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/528801_Airbus_A350-900_Carbon.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="lufthansa airbus a380-800 d-aimg herpa · 1:500 · 515986">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="lufthansa airbus a380-800 d-aimg herpa · 1:500 · 515986">
   <img src="img/515986_Lufthansa_A380-800.jpg" alt="Lufthansa Airbus A380-800" loading="lazy">
   <div class="face">
     <h2>Airbus A380-800 · D-AIMG</h2>
@@ -217,7 +218,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/515986_Lufthansa_A380-800.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="brussels airlines bae 146-300 / avro rj100 oo-dwl herpa · 1:500 · 509909">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="brussels airlines bae 146-300 / avro rj100 oo-dwl herpa · 1:500 · 509909">
   <img src="img/509909_Brussels_BAe146-300.jpg" alt="Brussels Airlines BAe 146-300 / Avro RJ100" loading="lazy">
   <div class="face">
     <h2>BAe 146-300 / Avro RJ100 · OO-DWL</h2>
@@ -232,7 +233,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/509909_Brussels_BAe146-300.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="ukraine international airlines boeing 737-200 ur-gac herpa · 1:500 · 505741">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="ukraine international airlines boeing 737-200 ur-gac herpa · 1:500 · 505741">
   <img src="img/505741_UIA_737-200.jpg" alt="Ukraine International Airlines Boeing 737-200" loading="lazy">
   <div class="face">
     <h2>Boeing 737-200 · UR-GAC</h2>
@@ -247,7 +248,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/505741_UIA_737-200.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="southwest airlines boeing 737-300 w/ winglets n383sw herpa · 1:500 · 506212">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="southwest airlines boeing 737-300 w/ winglets n383sw herpa · 1:500 · 506212">
   <img src="img/506212_Southwest_737-300_ArizonaOne.jpg" alt="Southwest Airlines Boeing 737-300 w/ Winglets" loading="lazy">
   <div class="face">
     <h2>Boeing 737-300 w/ Winglets · N383SW</h2>
@@ -262,7 +263,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/506212_Southwest_737-300_ArizonaOne.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="ukraine international airlines boeing 737-300 ur-gah (по каталогу) herpa · 1:500 · 511889">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="ukraine international airlines boeing 737-300 ur-gah (по каталогу) herpa · 1:500 · 511889">
   <img src="img/511889_UIA_737-300.jpg" alt="Ukraine International Airlines Boeing 737-300" loading="lazy">
   <div class="face">
     <h2>Boeing 737-300 · UR-GAH (по каталогу)</h2>
@@ -277,7 +278,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/511889_UIA_737-300.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="air berlin boeing 737-800 w/ winglets d-abko herpa · 1:500 · 505079">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="air berlin boeing 737-800 w/ winglets d-abko herpa · 1:500 · 505079">
   <img src="img/505079_AirBerlin_737-800.jpg" alt="Air Berlin Boeing 737-800 w/ Winglets" loading="lazy">
   <div class="face">
     <h2>Boeing 737-800 w/ Winglets · D-ABKO</h2>
@@ -292,7 +293,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/505079_AirBerlin_737-800.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="gol linhas aéreas inteligentes boeing 737-800 w/ winglets pr-gtf herpa · 1:500 · 519229">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="gol linhas aéreas inteligentes boeing 737-800 w/ winglets pr-gtf herpa · 1:500 · 519229">
   <img src="img/519229_GOL_737-800_10Anos.jpg" alt="GOL Linhas Aéreas Inteligentes Boeing 737-800 w/ Winglets" loading="lazy">
   <div class="face">
     <h2>Boeing 737-800 w/ Winglets · PR-GTF</h2>
@@ -307,7 +308,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/519229_GOL_737-800_10Anos.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="kulula.com boeing 737-800 w/ winglets zs-zwa herpa · 1:500 · 523325">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="kulula.com boeing 737-800 w/ winglets zs-zwa herpa · 1:500 · 523325">
   <img src="img/523325_Kulula_737-800.jpg" alt="Kulula.com Boeing 737-800 w/ Winglets" loading="lazy">
   <div class="face">
     <h2>Boeing 737-800 w/ Winglets · ZS-ZWA</h2>
@@ -322,7 +323,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/523325_Kulula_737-800.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="s7 airlines boeing 737-800 w/ winglets vp-bng inflight500 · 1:500 · if5738006">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="s7 airlines boeing 737-800 w/ winglets vp-bng inflight500 · 1:500 · if5738006">
   <img src="img/IF5738006_S7_737-800.jpg" alt="S7 Airlines Boeing 737-800 w/ Winglets" loading="lazy">
   <div class="face">
     <h2>Boeing 737-800 w/ Winglets · VP-BNG</h2>
@@ -337,7 +338,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/IF5738006_S7_737-800.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="tuifly boeing 737-800 w/ winglets d-ahfm herpa · 1:500 · 505031">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="tuifly boeing 737-800 w/ winglets d-ahfm herpa · 1:500 · 505031">
   <img src="img/505031_TUIfly_737-800_Haribo.jpg" alt="TUIfly Boeing 737-800 w/ Winglets" loading="lazy">
   <div class="face">
     <h2>Boeing 737-800 w/ Winglets · D-AHFM</h2>
@@ -352,7 +353,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/505031_TUIfly_737-800_Haribo.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="transaero airlines boeing 747-200 vp-bqa herpa · 1:500 · 515221">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="transaero airlines boeing 747-200 vp-bqa herpa · 1:500 · 515221">
   <img src="img/515221_Transaero_747-200.jpg" alt="Transaero Airlines Boeing 747-200" loading="lazy">
   <div class="face">
     <h2>Boeing 747-200 · VP-BQA</h2>
@@ -367,7 +368,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/515221_Transaero_747-200.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="air new zealand boeing 747-400 zk-nbv herpa · 1:500 · 513654">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="air new zealand boeing 747-400 zk-nbv herpa · 1:500 · 513654">
   <img src="img/513654_AirNZ_747-400_Frodo.jpg" alt="Air New Zealand Boeing 747-400" loading="lazy">
   <div class="face">
     <h2>Boeing 747-400 · ZK-NBV</h2>
@@ -382,7 +383,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/513654_AirNZ_747-400_Frodo.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="airbridgecargo (volga-dnepr group) boeing 747-8f vq-blq herpa · 1:500 · 520898">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="airbridgecargo (volga-dnepr group) boeing 747-8f vq-blq herpa · 1:500 · 520898">
   <img src="img/520898_AirBridgeCargo_747-8F.jpg" alt="AirBridgeCargo (Volga-Dnepr Group) Boeing 747-8F" loading="lazy">
   <div class="face">
     <h2>Boeing 747-8F · VQ-BLQ</h2>
@@ -397,7 +398,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/520898_AirBridgeCargo_747-8F.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="boeing (house) boeing 747-400lcf dreamlifter n780ba hogan · 1:500 · hg8447">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="boeing (house) boeing 747-400lcf dreamlifter n780ba hogan · 1:500 · hg8447">
   <img src="img/Hogan8447_Boeing_747LCF_Dreamlifter.jpg" alt="Boeing (House) Boeing 747-400LCF Dreamlifter" loading="lazy">
   <div class="face">
     <h2>Boeing 747-400LCF Dreamlifter · N780BA</h2>
@@ -412,7 +413,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/Hogan8447_Boeing_747LCF_Dreamlifter.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="airbaltic boeing 757-200 w/ winglets yl-bdc herpa · 1:500 · 506977">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="airbaltic boeing 757-200 w/ winglets yl-bdc herpa · 1:500 · 506977">
   <img src="img/506977_AirBaltic_757-200.jpg" alt="airBaltic Boeing 757-200 w/ Winglets" loading="lazy">
   <div class="face">
     <h2>Boeing 757-200 w/ Winglets · YL-BDC</h2>
@@ -427,7 +428,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/506977_AirBaltic_757-200.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="condor boeing 757-300 w/ winglets d-aboj herpa · 1:500 · 518536">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="condor boeing 757-300 w/ winglets d-aboj herpa · 1:500 · 518536">
   <img src="img/518536_Condor_757-300_Peanuts.jpg" alt="Condor Boeing 757-300 w/ Winglets" loading="lazy">
   <div class="face">
     <h2>Boeing 757-300 w/ Winglets · D-ABOJ</h2>
@@ -442,7 +443,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/518536_Condor_757-300_Peanuts.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="aeroflot boeing 767-300 vp-bwx inflight500 · 1:500 · if5763012">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="aeroflot boeing 767-300 vp-bwx inflight500 · 1:500 · if5763012">
   <img src="img/IF5763012_Aeroflot_767-300_BoscoSport.jpg" alt="Aeroflot Boeing 767-300" loading="lazy">
   <div class="face">
     <h2>Boeing 767-300 · VP-BWX</h2>
@@ -457,7 +458,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/IF5763012_Aeroflot_767-300_BoscoSport.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="aeroflot boeing 767-300 vp-bdi herpa · 1:500 · 504478">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="aeroflot boeing 767-300 vp-bdi herpa · 1:500 · 504478">
   <img src="img/504478_Aeroflot_767-300_VP-BDI.jpg" alt="Aeroflot Boeing 767-300" loading="lazy">
   <div class="face">
     <h2>Boeing 767-300 · VP-BDI</h2>
@@ -472,7 +473,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/504478_Aeroflot_767-300_VP-BDI.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="aeroflot boeing 767-300  herpa · 1:500 · 513081">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="aeroflot boeing 767-300  herpa · 1:500 · 513081">
   <img src="img/513081_Aeroflot_767-300_Club2002.jpg" alt="Aeroflot Boeing 767-300" loading="lazy">
   <div class="face">
     <h2>Boeing 767-300</h2>
@@ -487,7 +488,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/513081_Aeroflot_767-300_Club2002.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="aerosvit boeing 767-300 w/ winglets ur-vvv herpa · 1:500 · 523240">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="aerosvit boeing 767-300 w/ winglets ur-vvv herpa · 1:500 · 523240">
   <img src="img/523240_Aerosvit_767-300.jpg" alt="Aerosvit Boeing 767-300 w/ Winglets" loading="lazy">
   <div class="face">
     <h2>Boeing 767-300 w/ Winglets · UR-VVV</h2>
@@ -502,7 +503,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/523240_Aerosvit_767-300.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="air astana boeing 767-300 p4-kca herpa · 1:500 · 509503">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="air astana boeing 767-300 p4-kca herpa · 1:500 · 509503">
   <img src="img/509503_AirAstana_767-300.jpg" alt="Air Astana Boeing 767-300" loading="lazy">
   <div class="face">
     <h2>Boeing 767-300 · P4-KCA</h2>
@@ -517,7 +518,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/509503_AirAstana_767-300.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="air new zealand boeing 767-300 zk-ncg herpa · 1:500 · 504447">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="air new zealand boeing 767-300 zk-ncg herpa · 1:500 · 504447">
   <img src="img/504447_AirNZ_767-300_Aragorn.jpg" alt="Air New Zealand Boeing 767-300" loading="lazy">
   <div class="face">
     <h2>Boeing 767-300 · ZK-NCG</h2>
@@ -532,7 +533,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/504447_AirNZ_767-300_Aragorn.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="all nippon airways (ana) boeing 767-300 ja606a netmodels · 1:500 · n/a">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="all nippon airways (ana) boeing 767-300 ja606a netmodels · 1:500 · n/a">
   <img src="img/ANA_767-300_FlyPanda.jpg" alt="All Nippon Airways (ANA) Boeing 767-300" loading="lazy">
   <div class="face">
     <h2>Boeing 767-300 · JA606A</h2>
@@ -547,7 +548,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/ANA_767-300_FlyPanda.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="all nippon airways (ana) boeing 767-300 ja8357 ana official box (maker not stated) · 1:500">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="all nippon airways (ana) boeing 767-300 ja8357 ana official box (maker not stated) · 1:500">
   <img src="img/ANA_767-300_WoodyWoodpecker_USJ.jpg" alt="All Nippon Airways (ANA) Boeing 767-300" loading="lazy">
   <div class="face">
     <h2>Boeing 767-300 · JA8357</h2>
@@ -562,7 +563,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/ANA_767-300_WoodyWoodpecker_USJ.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="condor boeing 767-300 w/ winglets d-abub herpa · 1:500 · 517744">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="condor boeing 767-300 w/ winglets d-abub herpa · 1:500 · 517744">
   <img src="img/517744_Condor_767-300.jpg" alt="Condor Boeing 767-300 w/ Winglets" loading="lazy">
   <div class="face">
     <h2>Boeing 767-300 w/ Winglets · D-ABUB</h2>
@@ -577,7 +578,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/517744_Condor_767-300.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="condor boeing 767-300  herpa · 1:500 · 502757">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="condor boeing 767-300  herpa · 1:500 · 502757">
   <img src="img/502757_Condor_767-300.jpg" alt="Condor Boeing 767-300" loading="lazy">
   <div class="face">
     <h2>Boeing 767-300</h2>
@@ -592,7 +593,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/502757_Condor_767-300.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="lufthansa boeing 767-300er d-abuc herpa · 1:500 · 515979">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="lufthansa boeing 767-300er d-abuc herpa · 1:500 · 515979">
   <img src="img/515979_Lufthansa_767-300ER.jpg" alt="Lufthansa Boeing 767-300ER" loading="lazy">
   <div class="face">
     <h2>Boeing 767-300ER · D-ABUC</h2>
@@ -607,7 +608,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/515979_Lufthansa_767-300ER.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="private (частный борт) boeing 767-300 p4-mes herpa · 1:500 · 523639">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="private (частный борт) boeing 767-300 p4-mes herpa · 1:500 · 523639">
   <img src="img/523639_Private_767-300_Bandit.jpg" alt="Private (частный борт) Boeing 767-300" loading="lazy">
   <div class="face">
     <h2>Boeing 767-300 · P4-MES</h2>
@@ -622,7 +623,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/523639_Private_767-300_Bandit.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="s7 airlines boeing 767-300 vp-bvh herpa · 1:500 · 519274">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="s7 airlines boeing 767-300 vp-bvh herpa · 1:500 · 519274">
   <img src="img/519274_S7_767-300.jpg" alt="S7 Airlines Boeing 767-300" loading="lazy">
   <div class="face">
     <h2>Boeing 767-300 · VP-BVH</h2>
@@ -637,7 +638,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/519274_S7_767-300.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="tui fly nordic boeing 767-300 w/ winglets se-rfs herpa · 1:500 · 519281">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="tui fly nordic boeing 767-300 w/ winglets se-rfs herpa · 1:500 · 519281">
   <img src="img/519281_TUIflyNordic_767-300.jpg" alt="TUI fly Nordic Boeing 767-300 w/ Winglets" loading="lazy">
   <div class="face">
     <h2>Boeing 767-300 w/ Winglets · SE-RFS</h2>
@@ -652,7 +653,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/519281_TUIflyNordic_767-300.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="virgin atlantic (operated by martinair) boeing 767-300 ph-mcg virgin atlantic box (maker not stated) · 1:500">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="virgin atlantic (operated by martinair) boeing 767-300 ph-mcg virgin atlantic box (maker not stated) · 1:500">
   <img src="img/Virgin_767-300_PH-MCG.jpg" alt="Virgin Atlantic (operated by Martinair) Boeing 767-300" loading="lazy">
   <div class="face">
     <h2>Boeing 767-300 · PH-MCG</h2>
@@ -667,7 +668,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/Virgin_767-300_PH-MCG.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="aeroflot boeing 777-200  herpa · 1:500 · 506571">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="aeroflot boeing 777-200  herpa · 1:500 · 506571">
   <img src="img/506571_Aeroflot_777-200_TieDye.jpg" alt="Aeroflot Boeing 777-200" loading="lazy">
   <div class="face">
     <h2>Boeing 777-200</h2>
@@ -682,7 +683,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/506571_Aeroflot_777-200_TieDye.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="transaero airlines boeing 777-200er ei-unw herpa · 1:500 · 523561">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="transaero airlines boeing 777-200er ei-unw herpa · 1:500 · 523561">
   <img src="img/523561_Transaero_777-200.jpg" alt="Transaero Airlines Boeing 777-200ER" loading="lazy">
   <div class="face">
     <h2>Boeing 777-200ER · EI-UNW</h2>
@@ -697,7 +698,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/523561_Transaero_777-200.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="aeroflot boeing 777-300er vp-bgb aero500 (aeroclassics) · 1:500">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="aeroflot boeing 777-300er vp-bgb aero500 (aeroclassics) · 1:500">
   <img src="img/Aero500_Aeroflot_777-300ER_Kutuzov.jpg" alt="Aeroflot Boeing 777-300ER" loading="lazy">
   <div class="face">
     <h2>Boeing 777-300ER · VP-BGB</h2>
@@ -712,7 +713,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/Aero500_Aeroflot_777-300ER_Kutuzov.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="air new zealand boeing 777-300er zk-okp sky500 · 1:500 · 0762nz">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="air new zealand boeing 777-300er zk-okp sky500 · 1:500 · 0762nz">
   <img src="img/0762NZ_AirNZ_777-300ER_Hobbit.jpg" alt="Air New Zealand Boeing 777-300ER" loading="lazy">
   <div class="face">
     <h2>Boeing 777-300ER · ZK-OKP</h2>
@@ -727,7 +728,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/0762NZ_AirNZ_777-300ER_Hobbit.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="american airlines boeing 777-300er n717an herpa · 1:500 · 523950">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="american airlines boeing 777-300er n717an herpa · 1:500 · 523950">
   <img src="img/523950_American_777-300ER.jpg" alt="American Airlines Boeing 777-300ER" loading="lazy">
   <div class="face">
     <h2>Boeing 777-300ER · N717AN</h2>
@@ -742,7 +743,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/523950_American_777-300ER.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="british airways boeing 777-300er g-stbb herpa · 1:500 · 518246">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="british airways boeing 777-300er g-stbb herpa · 1:500 · 518246">
   <img src="img/518246_BA_777-300ER.jpg" alt="British Airways Boeing 777-300ER" loading="lazy">
   <div class="face">
     <h2>Boeing 777-300ER · G-STBB</h2>
@@ -757,7 +758,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/518246_BA_777-300ER.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="lot polish airlines boeing 787-8 dreamliner sp-lra herpa · 1:500 · 519069">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="lot polish airlines boeing 787-8 dreamliner sp-lra herpa · 1:500 · 519069">
   <img src="img/519069_LOT_787-8.jpg" alt="LOT Polish Airlines Boeing 787-8 Dreamliner" loading="lazy">
   <div class="face">
     <h2>Boeing 787-8 Dreamliner · SP-LRA</h2>
@@ -772,7 +773,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/519069_LOT_787-8.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="luxair embraer erj-145 lx-lgy herpa · 1:500 · 505222">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="luxair embraer erj-145 lx-lgy herpa · 1:500 · 505222">
   <img src="img/505222_Luxair_ERJ-145.jpg" alt="Luxair Embraer ERJ-145" loading="lazy">
   <div class="face">
     <h2>Embraer ERJ-145 · LX-LGY</h2>
@@ -787,7 +788,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/505222_Luxair_ERJ-145.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="british airways (ba cityflyer) embraer erj-190 g-lcyj herpa · 1:500 · 517737">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="british airways (ba cityflyer) embraer erj-190 g-lcyj herpa · 1:500 · 517737">
   <img src="img/517737_BA_Cityflyer_ERJ-190.jpg" alt="British Airways (BA Cityflyer) Embraer ERJ-190" loading="lazy">
   <div class="face">
     <h2>Embraer ERJ-190 · G-LCYJ</h2>
@@ -802,7 +803,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/517737_BA_Cityflyer_ERJ-190.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="aeroflot ilyushin il-18 cccp-75554 herpa · 1:500 · 520881">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="aeroflot ilyushin il-18 cccp-75554 herpa · 1:500 · 520881">
   <img src="img/520881_Aeroflot_Il-18.jpg" alt="Aeroflot Ilyushin Il-18" loading="lazy">
   <div class="face">
     <h2>Ilyushin Il-18 · CCCP-75554</h2>
@@ -817,7 +818,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/520881_Aeroflot_Il-18.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="aeroflot ilyushin il-76 ra-76780 herpa · 1:500 · 505338">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="aeroflot ilyushin il-76 ra-76780 herpa · 1:500 · 505338">
   <img src="img/505338_Aeroflot_Il-76.jpg" alt="Aeroflot Ilyushin Il-76" loading="lazy">
   <div class="face">
     <h2>Ilyushin Il-76 · RA-76780</h2>
@@ -832,7 +833,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/505338_Aeroflot_Il-76.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="united nations ilyushin il-76 ur-ucu herpa · 1:500 · 513661">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="united nations ilyushin il-76 ur-ucu herpa · 1:500 · 513661">
   <img src="img/513661_UN_Il-76.jpg" alt="United Nations Ilyushin Il-76" loading="lazy">
   <div class="face">
     <h2>Ilyushin Il-76 · UR-UCU</h2>
@@ -847,7 +848,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/513661_UN_Il-76.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="rossiya – special flight detachment (presidential aircraft) ilyushin il-96-300 ra-96016 herpa · 1:500 · 505024">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="rossiya – special flight detachment (presidential aircraft) ilyushin il-96-300 ra-96016 herpa · 1:500 · 505024">
   <img src="img/505024_Rossiya_Il-96-300_Presidential.jpg" alt="Rossiya – Special Flight Detachment (Presidential Aircraft) Ilyushin Il-96-300" loading="lazy">
   <div class="face">
     <h2>Ilyushin Il-96-300 · RA-96016</h2>
@@ -862,7 +863,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/505024_Rossiya_Il-96-300_Presidential.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="air ukraine tupolev tu-134a ur-65757 herpa · 1:500 · 510905">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="air ukraine tupolev tu-134a ur-65757 herpa · 1:500 · 510905">
   <img src="img/510905_AirUkraine_Tu-134A.jpg" alt="Air Ukraine Tupolev Tu-134A" loading="lazy">
   <div class="face">
     <h2>Tupolev Tu-134A · UR-65757</h2>
@@ -877,7 +878,7 @@ main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px
     <p><a href="img/510905_AirUkraine_Tu-134A.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
   </div>
 </article>
-<article class="card" tabindex="0" data-search="kavminvodyavia (kmv) tupolev tu-154m ra-85746 herpa · 1:500 · 515320">
+<article class="card" tabindex="0" role="button" aria-expanded="false" data-search="kavminvodyavia (kmv) tupolev tu-154m ra-85746 herpa · 1:500 · 515320">
   <img src="img/515320_KMV_Tu-154M.jpg" alt="Kavminvodyavia (KMV) Tupolev Tu-154M" loading="lazy">
   <div class="face">
     <h2>Tupolev Tu-154M · RA-85746</h2>
@@ -922,9 +923,15 @@ function render(){const q=document.getElementById('q').value.toLowerCase();
 document.getElementById('q').addEventListener('input',()=>{page=1;render();});
 document.querySelectorAll('.langs button').forEach(b=>b.addEventListener('click',render));
 render();
-// на сенсорних екранах — відкриття картки дотиком
-document.querySelectorAll('.card').forEach(c=>c.addEventListener('click',ev=>{
-  if(ev.target.closest('a'))return;
-  if(matchMedia('(hover: none)').matches){const o=c.classList.contains('open');
-    document.querySelectorAll('.card.open').forEach(x=>x.classList.remove('open'));if(!o)c.classList.add('open');}}));
+// клік відкриває картку, повторний клік закриває; відкрита лише одна
+function toggle(c){const o=c.classList.contains('open');
+  document.querySelectorAll('.card.open').forEach(x=>{x.classList.remove('open');x.setAttribute('aria-expanded','false');});
+  if(!o){c.classList.add('open');c.setAttribute('aria-expanded','true');}}
+document.querySelectorAll('.card').forEach(c=>{
+  c.addEventListener('click',ev=>{if(!ev.target.closest('a'))toggle(c);});
+  c.addEventListener('keydown',ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();toggle(c);}});});
+document.addEventListener('click',ev=>{if(!ev.target.closest('.card'))
+  document.querySelectorAll('.card.open').forEach(x=>x.classList.remove('open'));});
+document.addEventListener('keydown',ev=>{if(ev.key==='Escape')
+  document.querySelectorAll('.card.open').forEach(x=>x.classList.remove('open'));});
 </script></body></html>
