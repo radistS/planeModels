@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="uk"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Колекція моделей літаків 1:500 · 1:500 Aircraft Model Collection</title>
+<style>
+body{margin:0;font-family:-apple-system,Segoe UI,Roboto,sans-serif;background:#f4f4f2;color:#222}
+body[data-lang=uk] .en, body[data-lang=en] .uk{display:none}
+header{padding:24px 20px 8px;max-width:1300px;margin:auto}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+h1{margin:0;font-size:26px} header p{margin:4px 0 12px;color:#666}
+.langs button{border:1px solid #bbb;background:#fff;padding:6px 12px;font-size:14px;cursor:pointer}
+.langs button:first-child{border-radius:6px 0 0 6px} .langs button:last-child{border-radius:0 6px 6px 0;border-left:0}
+.langs button.on{background:#222;color:#fff;border-color:#222}
+input{width:100%;max-width:420px;padding:10px 12px;font-size:15px;border:1px solid #ccc;border-radius:8px;box-sizing:border-box}
+main{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:16px 20px 8px;max-width:1300px;margin:auto}
+@media(max-width:1000px){main{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){main{grid-template-columns:1fr}}
+.pager{display:flex;justify-content:center;align-items:center;gap:6px;flex-wrap:wrap;padding:20px 20px 160px}
+.pager button{min-width:38px;padding:7px 10px;border:1px solid #ccc;background:#fff;border-radius:6px;font-size:14px;cursor:pointer}
+.pager button.on{background:#222;color:#fff;border-color:#222} .pager button:disabled{opacity:.35;cursor:default}
+.pager .info{color:#777;font-size:13px;margin-left:8px}
+.card{position:relative;background:#fff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,.1);outline:none;transition:box-shadow .2s,transform .2s}
+.card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border-radius:10px 10px 0 0}
+.face{padding:10px 14px 12px} h2{font-size:16px;margin:0 0 2px}
+.airline{margin:0;font-size:14px;color:#333} .model{margin:4px 0 0;font-size:13px;color:#888}
+.details{position:absolute;left:0;right:0;top:100%;margin-top:-8px;background:#fff;border-radius:0 0 10px 10px;
+  padding:4px 14px 12px;box-shadow:0 10px 18px rgba(0,0,0,.18);font-size:14px;line-height:1.45;
+  opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .2s,transform .2s,visibility .2s}
+.details p{margin:6px 0} .details b{margin-right:4px} .details a{color:#1a5fb4;text-decoration:none}
+.card:hover,.card:focus-within,.card.open{z-index:5;box-shadow:0 10px 18px rgba(0,0,0,.18);transform:translateY(-2px)}
+.card:hover .details,.card:focus-within .details,.card.open .details{opacity:1;visibility:visible;transform:none}
+</style></head><body data-lang="uk">
+<header><div class="top">
+<h1><span class="uk">Колекція моделей літаків 1:500</span><span class="en">1:500 Aircraft Model Collection</span></h1>
+<div class="langs"><button data-l="uk">UA</button><button data-l="en">EN</button></div></div>
+<p><span class="uk">57 колекційних моделей. Наведіть на картку, щоб побачити подробиці.</span>
+<span class="en">57 die-cast airliner models. Hover over a card for details.</span></p>
+<input id="q"></header>
+<main id="grid">
+<article class="card" tabindex="0" data-search="aeroflot airbus a310-300 f-ogqr herpa · 1:500 · 518185">
+  <img src="img/518185_Aeroflot_A310-300_Interim.jpg" alt="Aeroflot Airbus A310-300" loading="lazy">
+  <div class="face">
+    <h2>Airbus A310-300 · F-OGQR</h2>
+    <p class="airline">Aeroflot</p>
+    <p class="model">Herpa · 1:500 · 518185</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 518185. Ліврея / серія: Перехідна/тестова ліврея (початок 1990-х). Ім&#x27;я борту: «Rachmaninov».</span><span class="en">Herpa die-cast model, scale 1:500. Item number 518185. Livery / edition: Interim/Test colour scheme (early 1990s). Aircraft name: &quot;Rachmaninov&quot;.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Airbus A310-300 з реєстрацією F-OGQR, експлуатант Aeroflot.</span><span class="en">Yes — models the real Airbus A310-300 registered F-OGQR, operated by Aeroflot.</span></p>
+    <p><a href="img/518185_Aeroflot_A310-300_Interim.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="rusline airbus a319 vp-bdy herpa · 1:500 · 523776">
+  <img src="img/523776_RusLine_A319.jpg" alt="RusLine Airbus A319" loading="lazy">
+  <div class="face">
+    <h2>Airbus A319 · VP-BDY</h2>
+    <p class="airline">RusLine</p>
+    <p class="model">Herpa · 1:500 · 523776</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 523776. Ліврея / серія: Ексклюзив Herpa Wings Club.</span><span class="en">Herpa die-cast model, scale 1:500. Item number 523776. Livery / edition: Herpa Wings Club exclusive edition.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Airbus A319 з реєстрацією VP-BDY, експлуатант RusLine.</span><span class="en">Yes — models the real Airbus A319 registered VP-BDY, operated by RusLine.</span></p>
+    <p><a href="img/523776_RusLine_A319.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="aeroflot airbus a320-200 vp-bzp herpa · 1:500 · 524407">
+  <img src="img/524407_Aeroflot_A320_Sochi2014.jpg" alt="Aeroflot Airbus A320-200" loading="lazy">
+  <div class="face">
+    <h2>Airbus A320-200 · VP-BZP</h2>
+    <p class="airline">Aeroflot</p>
+    <p class="model">Herpa · 1:500 · 524407</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 524407. Ліврея / серія: Ліврея зимової Олімпіади Сочі-2014. Ім&#x27;я борту: «E. Habarov / Е. Хабаров».</span><span class="en">Herpa die-cast model, scale 1:500. Item number 524407. Livery / edition: Sochi 2014 Winter Olympics livery. Aircraft name: &quot;E. Habarov / Е. Хабаров&quot;.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Airbus A320-200 з реєстрацією VP-BZP, експлуатант Aeroflot.</span><span class="en">Yes — models the real Airbus A320-200 registered VP-BZP, operated by Aeroflot.</span></p>
+    <p><a href="img/524407_Aeroflot_A320_Sochi2014.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="aeroflot airbus a320-200 vp-bnt herpa · 1:500 · 525930">
+  <img src="img/525930_Aeroflot_A320_Retrojet.jpg" alt="Aeroflot Airbus A320-200" loading="lazy">
+  <div class="face">
+    <h2>Airbus A320-200 · VP-BNT</h2>
+    <p class="airline">Aeroflot</p>
+    <p class="model">Herpa · 1:500 · 525930</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 525930. Ліврея / серія: Retrojet – ретро-ліврея («Добролёт»). Ім&#x27;я борту: «Dobrolet / Добролёт».</span><span class="en">Herpa die-cast model, scale 1:500. Item number 525930. Livery / edition: Retrojet – retro livery (Dobrolet heritage scheme). Aircraft name: &quot;Dobrolet / Добролёт&quot;.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Airbus A320-200 з реєстрацією VP-BNT, експлуатант Aeroflot.</span><span class="en">Yes — models the real Airbus A320-200 registered VP-BNT, operated by Aeroflot.</span></p>
+    <p><a href="img/525930_Aeroflot_A320_Retrojet.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="donbassaero airbus a321 ur-daf herpa · 1:500 · 520751">
+  <img src="img/520751_DonbassAero_A321.jpg" alt="DonbassAero Airbus A321" loading="lazy">
+  <div class="face">
+    <h2>Airbus A321 · UR-DAF</h2>
+    <p class="airline">DonbassAero</p>
+    <p class="model">Herpa · 1:500 · 520751</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 520751. Ліврея / серія: Помаранчево-чорна ліврея «Донбасаеро» (авіакомпанія припинила роботу).</span><span class="en">Herpa die-cast model, scale 1:500. Item number 520751. Livery / edition: DonbassAero orange/black livery (airline no longer operating).</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Airbus A321 з реєстрацією UR-DAF, експлуатант DonbassAero.</span><span class="en">Yes — models the real Airbus A321 registered UR-DAF, operated by DonbassAero.</span></p>
+    <p><a href="img/520751_DonbassAero_A321.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="windrose airlines airbus a330-200 ur-wrq sky500 · 1:500 · 0770wr">
+  <img src="img/0770WR_Windrose_A330-200.jpg" alt="Windrose Airlines Airbus A330-200" loading="lazy">
+  <div class="face">
+    <h2>Airbus A330-200 · UR-WRQ</h2>
+    <p class="airline">Windrose Airlines</p>
+    <p class="model">Sky500 · 1:500 · 0770WR</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Sky500, масштаб 1:500. Артикул 0770WR.</span><span class="en">Sky500 die-cast model, scale 1:500. Item number 0770WR.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Airbus A330-200 з реєстрацією UR-WRQ, експлуатант Windrose Airlines.</span><span class="en">Yes — models the real Airbus A330-200 registered UR-WRQ, operated by Windrose Airlines.</span></p>
+    <p><a href="img/0770WR_Windrose_A330-200.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="airasia x airbus a340-300 9m-xac sky500 · 1:500 · 0719as">
+  <img src="img/0719AS_AirAsiaX_A340-300_Raiders.jpg" alt="AirAsia X Airbus A340-300" loading="lazy">
+  <div class="face">
+    <h2>Airbus A340-300 · 9M-XAC</h2>
+    <p class="airline">AirAsia X</p>
+    <p class="model">Sky500 · 1:500 · 0719AS</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Sky500, масштаб 1:500. Артикул 0719AS. Ліврея / серія: Raiders.</span><span class="en">Sky500 die-cast model, scale 1:500. Item number 0719AS. Livery / edition: Raiders.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Airbus A340-300 з реєстрацією 9M-XAC, експлуатант AirAsia X.</span><span class="en">Yes — models the real Airbus A340-300 registered 9M-XAC, operated by AirAsia X.</span></p>
+    <p><a href="img/0719AS_AirAsiaX_A340-300_Raiders.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="lufthansa airbus a340-300 d-aigs herpa · 1:500 · 507509">
+  <img src="img/507509_Lufthansa_A340-300_WorldCup2006.jpg" alt="Lufthansa Airbus A340-300" loading="lazy">
+  <div class="face">
+    <h2>Airbus A340-300 · D-AIGS</h2>
+    <p class="airline">Lufthansa</p>
+    <p class="model">Herpa · 1:500 · 507509</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 507509. Ліврея / серія: Чемпіонат світу з футболу 2006 – «футбольний ніс». Ім&#x27;я борту: «Bergisch Gladbach».</span><span class="en">Herpa die-cast model, scale 1:500. Item number 507509. Livery / edition: FIFA World Cup 2006 &quot;football nose&quot;. Aircraft name: &quot;Bergisch Gladbach&quot;.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Airbus A340-300 з реєстрацією D-AIGS, експлуатант Lufthansa.</span><span class="en">Yes — models the real Airbus A340-300 registered D-AIGS, operated by Lufthansa.</span></p>
+    <p><a href="img/507509_Lufthansa_A340-300_WorldCup2006.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="lufthansa airbus a340-600 d-aihh herpa · 1:500 · 507417">
+  <img src="img/507417_Lufthansa_A340-600_Wiesbaden.jpg" alt="Lufthansa Airbus A340-600" loading="lazy">
+  <div class="face">
+    <h2>Airbus A340-600 · D-AIHH</h2>
+    <p class="airline">Lufthansa</p>
+    <p class="model">Herpa · 1:500 · 507417</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 507417. Ім&#x27;я борту: «Wiesbaden».</span><span class="en">Herpa die-cast model, scale 1:500. Item number 507417. Aircraft name: &quot;Wiesbaden&quot;.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Airbus A340-600 з реєстрацією D-AIHH, експлуатант Lufthansa.</span><span class="en">Yes — models the real Airbus A340-600 registered D-AIHH, operated by Lufthansa.</span></p>
+    <p><a href="img/507417_Lufthansa_A340-600_Wiesbaden.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="virgin atlantic airbus a340-600 g-veil sky500 · 1:500 · 0738va">
+  <img src="img/0738VA_Virgin_A340-600.jpg" alt="Virgin Atlantic Airbus A340-600" loading="lazy">
+  <div class="face">
+    <h2>Airbus A340-600 · G-VEIL</h2>
+    <p class="airline">Virgin Atlantic</p>
+    <p class="model">Sky500 · 1:500 · 0738VA</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Sky500, масштаб 1:500. Артикул 0738VA. Ім&#x27;я борту: «Queen of the Skies».</span><span class="en">Sky500 die-cast model, scale 1:500. Item number 0738VA. Aircraft name: &quot;Queen of the Skies&quot;.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Модель реального Airbus A340-600 авіакомпанії Virgin Atlantic; реєстрація G-VEIL — за каталогом колекції (на фото надто дрібна, не читається).</span><span class="en">Models a real Airbus A340-600 of Virgin Atlantic; registration G-VEIL per the collection catalogue (too small to read in the photos).</span></p>
+    <p><a href="img/0738VA_Virgin_A340-600.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="airbus (house) airbus a350-900 xwb f-wwcf herpa · 1:500 · 528801">
+  <img src="img/528801_Airbus_A350-900_Carbon.jpg" alt="Airbus (House) Airbus A350-900 XWB" loading="lazy">
+  <div class="face">
+    <h2>Airbus A350-900 XWB · F-WWCF</h2>
+    <p class="airline">Airbus (House)</p>
+    <p class="model">Herpa · 1:500 · 528801</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 528801. Ліврея / серія: Фірмова ліврея Airbus «Carbon».</span><span class="en">Herpa die-cast model, scale 1:500. Item number 528801. Livery / edition: Airbus &quot;Carbon color scheme&quot; house livery.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Модель реального Airbus A350-900 XWB авіакомпанії Airbus (House); реєстрація F-WWCF — за каталогом колекції (на фото надто дрібна, не читається).</span><span class="en">Models a real Airbus A350-900 XWB of Airbus (House); registration F-WWCF per the collection catalogue (too small to read in the photos).</span></p>
+    <p><a href="img/528801_Airbus_A350-900_Carbon.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="lufthansa airbus a380-800 d-aimg herpa · 1:500 · 515986">
+  <img src="img/515986_Lufthansa_A380-800.jpg" alt="Lufthansa Airbus A380-800" loading="lazy">
+  <div class="face">
+    <h2>Airbus A380-800 · D-AIMG</h2>
+    <p class="airline">Lufthansa</p>
+    <p class="model">Herpa · 1:500 · 515986</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 515986. Ім&#x27;я борту: «Wien».</span><span class="en">Herpa die-cast model, scale 1:500. Item number 515986. Aircraft name: &quot;Wien&quot;.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Airbus A380-800 з реєстрацією D-AIMG, експлуатант Lufthansa.</span><span class="en">Yes — models the real Airbus A380-800 registered D-AIMG, operated by Lufthansa.</span></p>
+    <p><a href="img/515986_Lufthansa_A380-800.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="brussels airlines bae 146-300 / avro rj100 oo-dwl herpa · 1:500 · 509909">
+  <img src="img/509909_Brussels_BAe146-300.jpg" alt="Brussels Airlines BAe 146-300 / Avro RJ100" loading="lazy">
+  <div class="face">
+    <h2>BAe 146-300 / Avro RJ100 · OO-DWL</h2>
+    <p class="airline">Brussels Airlines</p>
+    <p class="model">Herpa · 1:500 · 509909</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 509909.</span><span class="en">Herpa die-cast model, scale 1:500. Item number 509909.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака BAe 146-300 / Avro RJ100 з реєстрацією OO-DWL, експлуатант Brussels Airlines.</span><span class="en">Yes — models the real BAe 146-300 / Avro RJ100 registered OO-DWL, operated by Brussels Airlines.</span></p>
+    <p><a href="img/509909_Brussels_BAe146-300.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="ukraine international airlines boeing 737-200 ur-gac herpa · 1:500 · 505741">
+  <img src="img/505741_UIA_737-200.jpg" alt="Ukraine International Airlines Boeing 737-200" loading="lazy">
+  <div class="face">
+    <h2>Boeing 737-200 · UR-GAC</h2>
+    <p class="airline">Ukraine International Airlines</p>
+    <p class="model">Herpa · 1:500 · 505741</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 505741. Ліврея / серія: Лімітований випуск, екземпляр №0997 з 3000.</span><span class="en">Herpa die-cast model, scale 1:500. Item number 505741. Livery / edition: Limited edition #0997 of 3000.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 737-200 з реєстрацією UR-GAC, експлуатант Ukraine International Airlines.</span><span class="en">Yes — models the real Boeing 737-200 registered UR-GAC, operated by Ukraine International Airlines.</span></p>
+    <p><a href="img/505741_UIA_737-200.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="southwest airlines boeing 737-300 w/ winglets n383sw herpa · 1:500 · 506212">
+  <img src="img/506212_Southwest_737-300_ArizonaOne.jpg" alt="Southwest Airlines Boeing 737-300 w/ Winglets" loading="lazy">
+  <div class="face">
+    <h2>Boeing 737-300 w/ Winglets · N383SW</h2>
+    <p class="airline">Southwest Airlines</p>
+    <p class="model">Herpa · 1:500 · 506212</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 506212. Ліврея / серія: Arizona One.</span><span class="en">Herpa die-cast model, scale 1:500. Item number 506212. Livery / edition: Arizona One.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 737-300 w/ Winglets з реєстрацією N383SW, експлуатант Southwest Airlines.</span><span class="en">Yes — models the real Boeing 737-300 w/ Winglets registered N383SW, operated by Southwest Airlines.</span></p>
+    <p><a href="img/506212_Southwest_737-300_ArizonaOne.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="ukraine international airlines boeing 737-300 ur-gah (по каталогу) herpa · 1:500 · 511889">
+  <img src="img/511889_UIA_737-300.jpg" alt="Ukraine International Airlines Boeing 737-300" loading="lazy">
+  <div class="face">
+    <h2>Boeing 737-300 · UR-GAH (по каталогу)</h2>
+    <p class="airline">Ukraine International Airlines</p>
+    <p class="model">Herpa · 1:500 · 511889</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 511889.</span><span class="en">Herpa die-cast model, scale 1:500. Item number 511889.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Модель реального Boeing 737-300 авіакомпанії Ukraine International Airlines; реєстрація UR-GAH (по каталогу) — за каталогом колекції (на фото надто дрібна, не читається).</span><span class="en">Models a real Boeing 737-300 of Ukraine International Airlines; registration UR-GAH (по каталогу) per the collection catalogue (too small to read in the photos).</span></p>
+    <p><a href="img/511889_UIA_737-300.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="air berlin boeing 737-800 w/ winglets d-abko herpa · 1:500 · 505079">
+  <img src="img/505079_AirBerlin_737-800.jpg" alt="Air Berlin Boeing 737-800 w/ Winglets" loading="lazy">
+  <div class="face">
+    <h2>Boeing 737-800 w/ Winglets · D-ABKO</h2>
+    <p class="airline">Air Berlin</p>
+    <p class="model">Herpa · 1:500 · 505079</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 505079. Ліврея / серія: Ліврея Air Berlin (авіакомпанія припинила роботу).</span><span class="en">Herpa die-cast model, scale 1:500. Item number 505079. Livery / edition: Air Berlin livery (airline no longer operating).</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 737-800 w/ Winglets з реєстрацією D-ABKO, експлуатант Air Berlin.</span><span class="en">Yes — models the real Boeing 737-800 w/ Winglets registered D-ABKO, operated by Air Berlin.</span></p>
+    <p><a href="img/505079_AirBerlin_737-800.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="gol linhas aéreas inteligentes boeing 737-800 w/ winglets pr-gtf herpa · 1:500 · 519229">
+  <img src="img/519229_GOL_737-800_10Anos.jpg" alt="GOL Linhas Aéreas Inteligentes Boeing 737-800 w/ Winglets" loading="lazy">
+  <div class="face">
+    <h2>Boeing 737-800 w/ Winglets · PR-GTF</h2>
+    <p class="airline">GOL Linhas Aéreas Inteligentes</p>
+    <p class="model">Herpa · 1:500 · 519229</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 519229. Ліврея / серія: GOL 10 Anos – 10-річчя авіакомпанії.</span><span class="en">Herpa die-cast model, scale 1:500. Item number 519229. Livery / edition: GOL 10 Anos – 10th Anniversary.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 737-800 w/ Winglets з реєстрацією PR-GTF, експлуатант GOL Linhas Aéreas Inteligentes.</span><span class="en">Yes — models the real Boeing 737-800 w/ Winglets registered PR-GTF, operated by GOL Linhas Aéreas Inteligentes.</span></p>
+    <p><a href="img/519229_GOL_737-800_10Anos.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="kulula.com boeing 737-800 w/ winglets zs-zwa herpa · 1:500 · 523325">
+  <img src="img/523325_Kulula_737-800.jpg" alt="Kulula.com Boeing 737-800 w/ Winglets" loading="lazy">
+  <div class="face">
+    <h2>Boeing 737-800 w/ Winglets · ZS-ZWA</h2>
+    <p class="airline">Kulula.com</p>
+    <p class="model">Herpa · 1:500 · 523325</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 523325. Ліврея / серія: Ліврея Kulula.com (авіакомпанія припинила роботу у 2022).</span><span class="en">Herpa die-cast model, scale 1:500. Item number 523325. Livery / edition: Kulula.com livery (airline ceased operations 2022).</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 737-800 w/ Winglets з реєстрацією ZS-ZWA, експлуатант Kulula.com.</span><span class="en">Yes — models the real Boeing 737-800 w/ Winglets registered ZS-ZWA, operated by Kulula.com.</span></p>
+    <p><a href="img/523325_Kulula_737-800.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="s7 airlines boeing 737-800 w/ winglets vp-bng inflight500 · 1:500 · if5738006">
+  <img src="img/IF5738006_S7_737-800.jpg" alt="S7 Airlines Boeing 737-800 w/ Winglets" loading="lazy">
+  <div class="face">
+    <h2>Boeing 737-800 w/ Winglets · VP-BNG</h2>
+    <p class="airline">S7 Airlines</p>
+    <p class="model">Inflight500 · 1:500 · IF5738006</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Inflight500, масштаб 1:500. Артикул IF5738006.</span><span class="en">Inflight500 die-cast model, scale 1:500. Item number IF5738006.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 737-800 w/ Winglets з реєстрацією VP-BNG, експлуатант S7 Airlines.</span><span class="en">Yes — models the real Boeing 737-800 w/ Winglets registered VP-BNG, operated by S7 Airlines.</span></p>
+    <p><a href="img/IF5738006_S7_737-800.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="tuifly boeing 737-800 w/ winglets d-ahfm herpa · 1:500 · 505031">
+  <img src="img/505031_TUIfly_737-800_Haribo.jpg" alt="TUIfly Boeing 737-800 w/ Winglets" loading="lazy">
+  <div class="face">
+    <h2>Boeing 737-800 w/ Winglets · D-AHFM</h2>
+    <p class="airline">TUIfly</p>
+    <p class="model">Herpa · 1:500 · 505031</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 505031. Ліврея / серія: Haribo GoldbAIR.</span><span class="en">Herpa die-cast model, scale 1:500. Item number 505031. Livery / edition: Haribo GoldbAIR.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 737-800 w/ Winglets з реєстрацією D-AHFM, експлуатант TUIfly.</span><span class="en">Yes — models the real Boeing 737-800 w/ Winglets registered D-AHFM, operated by TUIfly.</span></p>
+    <p><a href="img/505031_TUIfly_737-800_Haribo.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="transaero airlines boeing 747-200 vp-bqa herpa · 1:500 · 515221">
+  <img src="img/515221_Transaero_747-200.jpg" alt="Transaero Airlines Boeing 747-200" loading="lazy">
+  <div class="face">
+    <h2>Boeing 747-200 · VP-BQA</h2>
+    <p class="airline">Transaero Airlines</p>
+    <p class="model">Herpa · 1:500 · 515221</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 515221. Ліврея / серія: Ліврея «Трансаеро» (авіакомпанія припинила роботу).</span><span class="en">Herpa die-cast model, scale 1:500. Item number 515221. Livery / edition: Transaero livery (airline no longer operating).</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 747-200 з реєстрацією VP-BQA, експлуатант Transaero Airlines. У 2005 році «Трансаеро» отримала п&#x27;ять колишніх Boeing 747 Air New Zealand і використовувала їх на курортних рейсах до Південної Європи (за даними Herpa).</span><span class="en">Yes — models the real Boeing 747-200 registered VP-BQA, operated by Transaero Airlines. Transaero took on five ex-Air New Zealand 747s in 2005 and used them on holiday routes to Southern Europe (per Herpa&#x27;s product notes).</span></p>
+    <p><a href="img/515221_Transaero_747-200.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="air new zealand boeing 747-400 zk-nbv herpa · 1:500 · 513654">
+  <img src="img/513654_AirNZ_747-400_Frodo.jpg" alt="Air New Zealand Boeing 747-400" loading="lazy">
+  <div class="face">
+    <h2>Boeing 747-400 · ZK-NBV</h2>
+    <p class="airline">Air New Zealand</p>
+    <p class="model">Herpa · 1:500 · 513654</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 513654. Ліврея / серія: «Володар перснів» – Фродо (коробка «Дві вежі»).</span><span class="en">Herpa die-cast model, scale 1:500. Item number 513654. Livery / edition: Lord of the Rings – Frodo (Two Towers box art).</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Модель реального Boeing 747-400 авіакомпанії Air New Zealand; реєстрація ZK-NBV — за каталогом колекції (на фото надто дрібна, не читається).</span><span class="en">Models a real Boeing 747-400 of Air New Zealand; registration ZK-NBV per the collection catalogue (too small to read in the photos).</span></p>
+    <p><a href="img/513654_AirNZ_747-400_Frodo.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="airbridgecargo (volga-dnepr group) boeing 747-8f vq-blq herpa · 1:500 · 520898">
+  <img src="img/520898_AirBridgeCargo_747-8F.jpg" alt="AirBridgeCargo (Volga-Dnepr Group) Boeing 747-8F" loading="lazy">
+  <div class="face">
+    <h2>Boeing 747-8F · VQ-BLQ</h2>
+    <p class="airline">AirBridgeCargo (Volga-Dnepr Group)</p>
+    <p class="model">Herpa · 1:500 · 520898</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 520898.</span><span class="en">Herpa die-cast model, scale 1:500. Item number 520898.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 747-8F з реєстрацією VQ-BLQ, експлуатант AirBridgeCargo (Volga-Dnepr Group). VQ-BLQ (серійний № 37581) — перший Boeing 747-8F авіакомпанії AirBridgeCargo.</span><span class="en">Yes — models the real Boeing 747-8F registered VQ-BLQ, operated by AirBridgeCargo (Volga-Dnepr Group). VQ-BLQ (msn 37581) was AirBridgeCargo&#x27;s first Boeing 747-8F.</span></p>
+    <p><a href="img/520898_AirBridgeCargo_747-8F.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="boeing (house) boeing 747-400lcf dreamlifter n780ba hogan · 1:500 · hg8447">
+  <img src="img/Hogan8447_Boeing_747LCF_Dreamlifter.jpg" alt="Boeing (House) Boeing 747-400LCF Dreamlifter" loading="lazy">
+  <div class="face">
+    <h2>Boeing 747-400LCF Dreamlifter · N780BA</h2>
+    <p class="airline">Boeing (House)</p>
+    <p class="model">Hogan · 1:500 · HG8447</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Hogan, масштаб 1:500. Артикул HG8447. Ліврея / серія: Boeing 747 Dreamlifter (LCF).</span><span class="en">Hogan die-cast model, scale 1:500. Item number HG8447. Livery / edition: Boeing 747 Dreamlifter (LCF).</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Модель реального Boeing 747-400LCF Dreamlifter авіакомпанії Boeing (House); реєстрація N780BA — за каталогом колекції (на фото надто дрібна, не читається).</span><span class="en">Models a real Boeing 747-400LCF Dreamlifter of Boeing (House); registration N780BA per the collection catalogue (too small to read in the photos).</span></p>
+    <p><a href="img/Hogan8447_Boeing_747LCF_Dreamlifter.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="airbaltic boeing 757-200 w/ winglets yl-bdc herpa · 1:500 · 506977">
+  <img src="img/506977_AirBaltic_757-200.jpg" alt="airBaltic Boeing 757-200 w/ Winglets" loading="lazy">
+  <div class="face">
+    <h2>Boeing 757-200 w/ Winglets · YL-BDC</h2>
+    <p class="airline">airBaltic</p>
+    <p class="model">Herpa · 1:500 · 506977</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 506977.</span><span class="en">Herpa die-cast model, scale 1:500. Item number 506977.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 757-200 w/ Winglets з реєстрацією YL-BDC, експлуатант airBaltic.</span><span class="en">Yes — models the real Boeing 757-200 w/ Winglets registered YL-BDC, operated by airBaltic.</span></p>
+    <p><a href="img/506977_AirBaltic_757-200.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="condor boeing 757-300 w/ winglets d-aboj herpa · 1:500 · 518536">
+  <img src="img/518536_Condor_757-300_Peanuts.jpg" alt="Condor Boeing 757-300 w/ Winglets" loading="lazy">
+  <div class="face">
+    <h2>Boeing 757-300 w/ Winglets · D-ABOJ</h2>
+    <p class="airline">Condor</p>
+    <p class="model">Herpa · 1:500 · 518536</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 518536. Ліврея / серія: Peanuts (Снупі).</span><span class="en">Herpa die-cast model, scale 1:500. Item number 518536. Livery / edition: Peanuts (Snoopy).</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 757-300 w/ Winglets з реєстрацією D-ABOJ, експлуатант Condor.</span><span class="en">Yes — models the real Boeing 757-300 w/ Winglets registered D-ABOJ, operated by Condor.</span></p>
+    <p><a href="img/518536_Condor_757-300_Peanuts.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="aeroflot boeing 767-300 vp-bwx inflight500 · 1:500 · if5763012">
+  <img src="img/IF5763012_Aeroflot_767-300_BoscoSport.jpg" alt="Aeroflot Boeing 767-300" loading="lazy">
+  <div class="face">
+    <h2>Boeing 767-300 · VP-BWX</h2>
+    <p class="airline">Aeroflot</p>
+    <p class="model">Inflight500 · 1:500 · IF5763012</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Inflight500, масштаб 1:500. Артикул IF5763012. Ліврея / серія: Bosco Sport – ліврея Олімпіади-2008 у Пекіні. Ім&#x27;я борту: «Alexander Blok».</span><span class="en">Inflight500 die-cast model, scale 1:500. Item number IF5763012. Livery / edition: Bosco Sport – 2008 Beijing Olympics livery. Aircraft name: &quot;Alexander Blok&quot;.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 767-300 з реєстрацією VP-BWX, експлуатант Aeroflot.</span><span class="en">Yes — models the real Boeing 767-300 registered VP-BWX, operated by Aeroflot.</span></p>
+    <p><a href="img/IF5763012_Aeroflot_767-300_BoscoSport.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="aeroflot boeing 767-300 vp-bdi herpa · 1:500 · 504478">
+  <img src="img/504478_Aeroflot_767-300_VP-BDI.jpg" alt="Aeroflot Boeing 767-300" loading="lazy">
+  <div class="face">
+    <h2>Boeing 767-300 · VP-BDI</h2>
+    <p class="airline">Aeroflot</p>
+    <p class="model">Herpa · 1:500 · 504478</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 504478. Ліврея / серія: Фірмова коробка «Аерофлоту».</span><span class="en">Herpa die-cast model, scale 1:500. Item number 504478. Livery / edition: Aeroflot-branded box edition.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 767-300 з реєстрацією VP-BDI, експлуатант Aeroflot.</span><span class="en">Yes — models the real Boeing 767-300 registered VP-BDI, operated by Aeroflot.</span></p>
+    <p><a href="img/504478_Aeroflot_767-300_VP-BDI.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="aeroflot boeing 767-300  herpa · 1:500 · 513081">
+  <img src="img/513081_Aeroflot_767-300_Club2002.jpg" alt="Aeroflot Boeing 767-300" loading="lazy">
+  <div class="face">
+    <h2>Boeing 767-300</h2>
+    <p class="airline">Aeroflot</p>
+    <p class="model">Herpa · 1:500 · 513081</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 513081. Ліврея / серія: Клубне видання Herpa Wings Club 2002.</span><span class="en">Herpa die-cast model, scale 1:500. Item number 513081. Livery / edition: Herpa Wings Club Edition 2002.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Реєстрації на моделі немає — це загальне зображення Boeing 767-300 авіакомпанії Aeroflot у цій лівреї, а не конкретного борту.</span><span class="en">No registration on the model — a representation of an Aeroflot Boeing 767-300 in this livery rather than one specific airframe.</span></p>
+    <p><a href="img/513081_Aeroflot_767-300_Club2002.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="aerosvit boeing 767-300 w/ winglets ur-vvv herpa · 1:500 · 523240">
+  <img src="img/523240_Aerosvit_767-300.jpg" alt="Aerosvit Boeing 767-300 w/ Winglets" loading="lazy">
+  <div class="face">
+    <h2>Boeing 767-300 w/ Winglets · UR-VVV</h2>
+    <p class="airline">Aerosvit</p>
+    <p class="model">Herpa · 1:500 · 523240</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 523240. Ліврея / серія: Історична ліврея «АероСвіт» (авіакомпанія припинила роботу).</span><span class="en">Herpa die-cast model, scale 1:500. Item number 523240. Livery / edition: Historic Aerosvit livery (airline no longer operating).</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 767-300 w/ Winglets з реєстрацією UR-VVV, експлуатант Aerosvit.</span><span class="en">Yes — models the real Boeing 767-300 w/ Winglets registered UR-VVV, operated by Aerosvit.</span></p>
+    <p><a href="img/523240_Aerosvit_767-300.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="air astana boeing 767-300 p4-kca herpa · 1:500 · 509503">
+  <img src="img/509503_AirAstana_767-300.jpg" alt="Air Astana Boeing 767-300" loading="lazy">
+  <div class="face">
+    <h2>Boeing 767-300 · P4-KCA</h2>
+    <p class="airline">Air Astana</p>
+    <p class="model">Herpa · 1:500 · 509503</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 509503.</span><span class="en">Herpa die-cast model, scale 1:500. Item number 509503.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Модель реального Boeing 767-300 авіакомпанії Air Astana; реєстрація P4-KCA — за каталогом колекції (на фото надто дрібна, не читається).</span><span class="en">Models a real Boeing 767-300 of Air Astana; registration P4-KCA per the collection catalogue (too small to read in the photos).</span></p>
+    <p><a href="img/509503_AirAstana_767-300.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="air new zealand boeing 767-300 zk-ncg herpa · 1:500 · 504447">
+  <img src="img/504447_AirNZ_767-300_Aragorn.jpg" alt="Air New Zealand Boeing 767-300" loading="lazy">
+  <div class="face">
+    <h2>Boeing 767-300 · ZK-NCG</h2>
+    <p class="airline">Air New Zealand</p>
+    <p class="model">Herpa · 1:500 · 504447</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 504447. Ліврея / серія: «Володар перснів» – Араґорн.</span><span class="en">Herpa die-cast model, scale 1:500. Item number 504447. Livery / edition: Lord of the Rings – Aragorn.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 767-300 з реєстрацією ZK-NCG, експлуатант Air New Zealand.</span><span class="en">Yes — models the real Boeing 767-300 registered ZK-NCG, operated by Air New Zealand.</span></p>
+    <p><a href="img/504447_AirNZ_767-300_Aragorn.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="all nippon airways (ana) boeing 767-300 ja606a netmodels · 1:500 · n/a">
+  <img src="img/ANA_767-300_FlyPanda.jpg" alt="All Nippon Airways (ANA) Boeing 767-300" loading="lazy">
+  <div class="face">
+    <h2>Boeing 767-300 · JA606A</h2>
+    <p class="airline">All Nippon Airways (ANA)</p>
+    <p class="model">Netmodels · 1:500 · N/A</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Netmodels, масштаб 1:500. Артикул N/A. Ліврея / серія: Fly! Panda.</span><span class="en">Netmodels die-cast model, scale 1:500. Item number N/A. Livery / edition: Fly! Panda.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 767-300 з реєстрацією JA606A, експлуатант All Nippon Airways (ANA).</span><span class="en">Yes — models the real Boeing 767-300 registered JA606A, operated by All Nippon Airways (ANA).</span></p>
+    <p><a href="img/ANA_767-300_FlyPanda.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="all nippon airways (ana) boeing 767-300 ja8357 ana official box (maker not stated) · 1:500">
+  <img src="img/ANA_767-300_WoodyWoodpecker_USJ.jpg" alt="All Nippon Airways (ANA) Boeing 767-300" loading="lazy">
+  <div class="face">
+    <h2>Boeing 767-300 · JA8357</h2>
+    <p class="airline">All Nippon Airways (ANA)</p>
+    <p class="model">ANA official box (maker not stated) · 1:500</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель (фірмова коробка ANA, виробник не вказаний), масштаб 1:500. Ліврея / серія: Universal Studios Japan – Вуді Вудпекер.</span><span class="en">ANA official box (maker not stated) die-cast model, scale 1:500. Livery / edition: Universal Studios Japan – Woody Woodpecker.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 767-300 з реєстрацією JA8357, експлуатант All Nippon Airways (ANA). JA8357 — Boeing 767-381 (серійний № 25293). ANA ввела його у 2001 році як «Woody Jet» для Universal Studios Japan, з Вуді Вудпекером.</span><span class="en">Yes — models the real Boeing 767-300 registered JA8357, operated by All Nippon Airways (ANA). JA8357 is a Boeing 767-381 (msn 25293). ANA introduced it in 2001 as the &quot;Woody Jet&quot; for Universal Studios Japan, featuring Woody Woodpecker.</span></p>
+    <p><a href="img/ANA_767-300_WoodyWoodpecker_USJ.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="condor boeing 767-300 w/ winglets d-abub herpa · 1:500 · 517744">
+  <img src="img/517744_Condor_767-300.jpg" alt="Condor Boeing 767-300 w/ Winglets" loading="lazy">
+  <div class="face">
+    <h2>Boeing 767-300 w/ Winglets · D-ABUB</h2>
+    <p class="airline">Condor</p>
+    <p class="model">Herpa · 1:500 · 517744</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 517744.</span><span class="en">Herpa die-cast model, scale 1:500. Item number 517744.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 767-300 w/ Winglets з реєстрацією D-ABUB, експлуатант Condor.</span><span class="en">Yes — models the real Boeing 767-300 w/ Winglets registered D-ABUB, operated by Condor.</span></p>
+    <p><a href="img/517744_Condor_767-300.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="condor boeing 767-300  herpa · 1:500 · 502757">
+  <img src="img/502757_Condor_767-300.jpg" alt="Condor Boeing 767-300" loading="lazy">
+  <div class="face">
+    <h2>Boeing 767-300</h2>
+    <p class="airline">Condor</p>
+    <p class="model">Herpa · 1:500 · 502757</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 502757. Ліврея / серія: Класична ліврея Condor, ранній випуск Herpa Wings.</span><span class="en">Herpa die-cast model, scale 1:500. Item number 502757. Livery / edition: Classic Condor livery, early Herpa Wings release.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Реєстрації на моделі немає — це загальне зображення Boeing 767-300 авіакомпанії Condor у цій лівреї, а не конкретного борту.</span><span class="en">No registration on the model — a representation of an Condor Boeing 767-300 in this livery rather than one specific airframe.</span></p>
+    <p><a href="img/502757_Condor_767-300.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="lufthansa boeing 767-300er d-abuc herpa · 1:500 · 515979">
+  <img src="img/515979_Lufthansa_767-300ER.jpg" alt="Lufthansa Boeing 767-300ER" loading="lazy">
+  <div class="face">
+    <h2>Boeing 767-300ER · D-ABUC</h2>
+    <p class="airline">Lufthansa</p>
+    <p class="model">Herpa · 1:500 · 515979</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 515979. Ліврея / серія: Серія Lufthansa «Yesterday».</span><span class="en">Herpa die-cast model, scale 1:500. Item number 515979. Livery / edition: Lufthansa &quot;Yesterday&quot; series.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 767-300ER з реєстрацією D-ABUC, експлуатант Lufthansa.</span><span class="en">Yes — models the real Boeing 767-300ER registered D-ABUC, operated by Lufthansa.</span></p>
+    <p><a href="img/515979_Lufthansa_767-300ER.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="private (частный борт) boeing 767-300 p4-mes herpa · 1:500 · 523639">
+  <img src="img/523639_Private_767-300_Bandit.jpg" alt="Private (частный борт) Boeing 767-300" loading="lazy">
+  <div class="face">
+    <h2>Boeing 767-300 · P4-MES</h2>
+    <p class="airline">Private (частный борт)</p>
+    <p class="model">Herpa · 1:500 · 523639</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 523639. Ліврея / серія: Bandit.</span><span class="en">Herpa die-cast model, scale 1:500. Item number 523639. Livery / edition: Bandit.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 767-300 з реєстрацією P4-MES, експлуатант Private (частный борт).</span><span class="en">Yes — models the real Boeing 767-300 registered P4-MES, operated by Private (частный борт).</span></p>
+    <p><a href="img/523639_Private_767-300_Bandit.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="s7 airlines boeing 767-300 vp-bvh herpa · 1:500 · 519274">
+  <img src="img/519274_S7_767-300.jpg" alt="S7 Airlines Boeing 767-300" loading="lazy">
+  <div class="face">
+    <h2>Boeing 767-300 · VP-BVH</h2>
+    <p class="airline">S7 Airlines</p>
+    <p class="model">Herpa · 1:500 · 519274</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 519274.</span><span class="en">Herpa die-cast model, scale 1:500. Item number 519274.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 767-300 з реєстрацією VP-BVH, експлуатант S7 Airlines.</span><span class="en">Yes — models the real Boeing 767-300 registered VP-BVH, operated by S7 Airlines.</span></p>
+    <p><a href="img/519274_S7_767-300.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="tui fly nordic boeing 767-300 w/ winglets se-rfs herpa · 1:500 · 519281">
+  <img src="img/519281_TUIflyNordic_767-300.jpg" alt="TUI fly Nordic Boeing 767-300 w/ Winglets" loading="lazy">
+  <div class="face">
+    <h2>Boeing 767-300 w/ Winglets · SE-RFS</h2>
+    <p class="airline">TUI fly Nordic</p>
+    <p class="model">Herpa · 1:500 · 519281</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 519281.</span><span class="en">Herpa die-cast model, scale 1:500. Item number 519281.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 767-300 w/ Winglets з реєстрацією SE-RFS, експлуатант TUI fly Nordic.</span><span class="en">Yes — models the real Boeing 767-300 w/ Winglets registered SE-RFS, operated by TUI fly Nordic.</span></p>
+    <p><a href="img/519281_TUIflyNordic_767-300.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="virgin atlantic (operated by martinair) boeing 767-300 ph-mcg virgin atlantic box (maker not stated) · 1:500">
+  <img src="img/Virgin_767-300_PH-MCG.jpg" alt="Virgin Atlantic (operated by Martinair) Boeing 767-300" loading="lazy">
+  <div class="face">
+    <h2>Boeing 767-300 · PH-MCG</h2>
+    <p class="airline">Virgin Atlantic (operated by Martinair)</p>
+    <p class="model">Virgin Atlantic box (maker not stated) · 1:500</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель (фірмова коробка Virgin Atlantic, виробник не вказаний), масштаб 1:500. Ліврея / серія: Virgin Atlantic 767, експлуатант Martinair (PH-MCG). Ім&#x27;я борту: «Prins Johan Friso».</span><span class="en">Virgin Atlantic box (maker not stated) die-cast model, scale 1:500. Livery / edition: Virgin Atlantic 767 operated by Martinair (PH-MCG). Aircraft name: &quot;Prins Johan Friso&quot;.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 767-300 з реєстрацією PH-MCG, експлуатант Virgin Atlantic (operated by Martinair).</span><span class="en">Yes — models the real Boeing 767-300 registered PH-MCG, operated by Virgin Atlantic (operated by Martinair).</span></p>
+    <p><a href="img/Virgin_767-300_PH-MCG.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="aeroflot boeing 777-200  herpa · 1:500 · 506571">
+  <img src="img/506571_Aeroflot_777-200_TieDye.jpg" alt="Aeroflot Boeing 777-200" loading="lazy">
+  <div class="face">
+    <h2>Boeing 777-200</h2>
+    <p class="airline">Aeroflot</p>
+    <p class="model">Herpa · 1:500 · 506571</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 506571. Ліврея / серія: Ліврея «Аерофлоту» з «прапором» на кілі (Tie-Dye).</span><span class="en">Herpa die-cast model, scale 1:500. Item number 506571. Livery / edition: Aeroflot &quot;Tie-Dye&quot; tail livery.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Реєстрації на моделі немає — це загальне зображення Boeing 777-200 авіакомпанії Aeroflot у цій лівреї, а не конкретного борту.</span><span class="en">No registration on the model — a representation of an Aeroflot Boeing 777-200 in this livery rather than one specific airframe.</span></p>
+    <p><a href="img/506571_Aeroflot_777-200_TieDye.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="transaero airlines boeing 777-200er ei-unw herpa · 1:500 · 523561">
+  <img src="img/523561_Transaero_777-200.jpg" alt="Transaero Airlines Boeing 777-200ER" loading="lazy">
+  <div class="face">
+    <h2>Boeing 777-200ER · EI-UNW</h2>
+    <p class="airline">Transaero Airlines</p>
+    <p class="model">Herpa · 1:500 · 523561</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 523561. Ліврея / серія: Ліврея «Трансаеро» (авіакомпанія припинила роботу).</span><span class="en">Herpa die-cast model, scale 1:500. Item number 523561. Livery / edition: Transaero livery (airline no longer operating).</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 777-200ER з реєстрацією EI-UNW, експлуатант Transaero Airlines.</span><span class="en">Yes — models the real Boeing 777-200ER registered EI-UNW, operated by Transaero Airlines.</span></p>
+    <p><a href="img/523561_Transaero_777-200.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="aeroflot boeing 777-300er vp-bgb aero500 (aeroclassics) · 1:500">
+  <img src="img/Aero500_Aeroflot_777-300ER_Kutuzov.jpg" alt="Aeroflot Boeing 777-300ER" loading="lazy">
+  <div class="face">
+    <h2>Boeing 777-300ER · VP-BGB</h2>
+    <p class="airline">Aeroflot</p>
+    <p class="model">Aero500 (Aeroclassics) · 1:500</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Aero500 (Aeroclassics), масштаб 1:500. Ім&#x27;я борту: «M. Kutuzov / М. Кутузов».</span><span class="en">Aero500 (Aeroclassics) die-cast model, scale 1:500. Aircraft name: &quot;M. Kutuzov / М. Кутузов&quot;.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 777-300ER з реєстрацією VP-BGB, експлуатант Aeroflot. VP-BGB — Boeing 777-3M0/ER (серійний № 41679) «М. Кутузов», переданий «Аерофлоту» у січні 2013 року; у 2022 перереєстрований як RA-73140.</span><span class="en">Yes — models the real Boeing 777-300ER registered VP-BGB, operated by Aeroflot. VP-BGB is a Boeing 777-3M0/ER (msn 41679) named &quot;M. Kutuzov&quot;, delivered to Aeroflot in January 2013; re-registered RA-73140 in 2022.</span></p>
+    <p><a href="img/Aero500_Aeroflot_777-300ER_Kutuzov.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="air new zealand boeing 777-300er zk-okp sky500 · 1:500 · 0762nz">
+  <img src="img/0762NZ_AirNZ_777-300ER_Hobbit.jpg" alt="Air New Zealand Boeing 777-300ER" loading="lazy">
+  <div class="face">
+    <h2>Boeing 777-300ER · ZK-OKP</h2>
+    <p class="airline">Air New Zealand</p>
+    <p class="model">Sky500 · 1:500 · 0762NZ</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Sky500, масштаб 1:500. Артикул 0762NZ. Ліврея / серія: «Гобіт».</span><span class="en">Sky500 die-cast model, scale 1:500. Item number 0762NZ. Livery / edition: The Hobbit.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 777-300ER з реєстрацією ZK-OKP, експлуатант Air New Zealand.</span><span class="en">Yes — models the real Boeing 777-300ER registered ZK-OKP, operated by Air New Zealand.</span></p>
+    <p><a href="img/0762NZ_AirNZ_777-300ER_Hobbit.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="american airlines boeing 777-300er n717an herpa · 1:500 · 523950">
+  <img src="img/523950_American_777-300ER.jpg" alt="American Airlines Boeing 777-300ER" loading="lazy">
+  <div class="face">
+    <h2>Boeing 777-300ER · N717AN</h2>
+    <p class="airline">American Airlines</p>
+    <p class="model">Herpa · 1:500 · 523950</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 523950.</span><span class="en">Herpa die-cast model, scale 1:500. Item number 523950.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 777-300ER з реєстрацією N717AN, експлуатант American Airlines.</span><span class="en">Yes — models the real Boeing 777-300ER registered N717AN, operated by American Airlines.</span></p>
+    <p><a href="img/523950_American_777-300ER.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="british airways boeing 777-300er g-stbb herpa · 1:500 · 518246">
+  <img src="img/518246_BA_777-300ER.jpg" alt="British Airways Boeing 777-300ER" loading="lazy">
+  <div class="face">
+    <h2>Boeing 777-300ER · G-STBB</h2>
+    <p class="airline">British Airways</p>
+    <p class="model">Herpa · 1:500 · 518246</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 518246.</span><span class="en">Herpa die-cast model, scale 1:500. Item number 518246.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 777-300ER з реєстрацією G-STBB, експлуатант British Airways.</span><span class="en">Yes — models the real Boeing 777-300ER registered G-STBB, operated by British Airways.</span></p>
+    <p><a href="img/518246_BA_777-300ER.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="lot polish airlines boeing 787-8 dreamliner sp-lra herpa · 1:500 · 519069">
+  <img src="img/519069_LOT_787-8.jpg" alt="LOT Polish Airlines Boeing 787-8 Dreamliner" loading="lazy">
+  <div class="face">
+    <h2>Boeing 787-8 Dreamliner · SP-LRA</h2>
+    <p class="airline">LOT Polish Airlines</p>
+    <p class="model">Herpa · 1:500 · 519069</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 519069.</span><span class="en">Herpa die-cast model, scale 1:500. Item number 519069.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Boeing 787-8 Dreamliner з реєстрацією SP-LRA, експлуатант LOT Polish Airlines.</span><span class="en">Yes — models the real Boeing 787-8 Dreamliner registered SP-LRA, operated by LOT Polish Airlines.</span></p>
+    <p><a href="img/519069_LOT_787-8.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="luxair embraer erj-145 lx-lgy herpa · 1:500 · 505222">
+  <img src="img/505222_Luxair_ERJ-145.jpg" alt="Luxair Embraer ERJ-145" loading="lazy">
+  <div class="face">
+    <h2>Embraer ERJ-145 · LX-LGY</h2>
+    <p class="airline">Luxair</p>
+    <p class="model">Herpa · 1:500 · 505222</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 505222.</span><span class="en">Herpa die-cast model, scale 1:500. Item number 505222.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Embraer ERJ-145 з реєстрацією LX-LGY, експлуатант Luxair.</span><span class="en">Yes — models the real Embraer ERJ-145 registered LX-LGY, operated by Luxair.</span></p>
+    <p><a href="img/505222_Luxair_ERJ-145.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="british airways (ba cityflyer) embraer erj-190 g-lcyj herpa · 1:500 · 517737">
+  <img src="img/517737_BA_Cityflyer_ERJ-190.jpg" alt="British Airways (BA Cityflyer) Embraer ERJ-190" loading="lazy">
+  <div class="face">
+    <h2>Embraer ERJ-190 · G-LCYJ</h2>
+    <p class="airline">British Airways (BA Cityflyer)</p>
+    <p class="model">Herpa · 1:500 · 517737</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 517737.</span><span class="en">Herpa die-cast model, scale 1:500. Item number 517737.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Embraer ERJ-190 з реєстрацією G-LCYJ, експлуатант British Airways (BA Cityflyer).</span><span class="en">Yes — models the real Embraer ERJ-190 registered G-LCYJ, operated by British Airways (BA Cityflyer).</span></p>
+    <p><a href="img/517737_BA_Cityflyer_ERJ-190.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="aeroflot ilyushin il-18 cccp-75554 herpa · 1:500 · 520881">
+  <img src="img/520881_Aeroflot_Il-18.jpg" alt="Aeroflot Ilyushin Il-18" loading="lazy">
+  <div class="face">
+    <h2>Ilyushin Il-18 · CCCP-75554</h2>
+    <p class="airline">Aeroflot</p>
+    <p class="model">Herpa · 1:500 · 520881</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 520881. Ліврея / серія: Гвинти обертаються (не перевірялося).</span><span class="en">Herpa die-cast model, scale 1:500. Item number 520881. Livery / edition: Rotating engine/propeller feature (untested).</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Ilyushin Il-18 з реєстрацією CCCP-75554, експлуатант Aeroflot.</span><span class="en">Yes — models the real Ilyushin Il-18 registered CCCP-75554, operated by Aeroflot.</span></p>
+    <p><a href="img/520881_Aeroflot_Il-18.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="aeroflot ilyushin il-76 ra-76780 herpa · 1:500 · 505338">
+  <img src="img/505338_Aeroflot_Il-76.jpg" alt="Aeroflot Ilyushin Il-76" loading="lazy">
+  <div class="face">
+    <h2>Ilyushin Il-76 · RA-76780</h2>
+    <p class="airline">Aeroflot</p>
+    <p class="model">Herpa · 1:500 · 505338</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 505338. Ліврея / серія: Класична вантажна ліврея «Аерофлоту».</span><span class="en">Herpa die-cast model, scale 1:500. Item number 505338. Livery / edition: Classic Aeroflot cargo livery.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Ilyushin Il-76 з реєстрацією RA-76780, експлуатант Aeroflot.</span><span class="en">Yes — models the real Ilyushin Il-76 registered RA-76780, operated by Aeroflot.</span></p>
+    <p><a href="img/505338_Aeroflot_Il-76.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="united nations ilyushin il-76 ur-ucu herpa · 1:500 · 513661">
+  <img src="img/513661_UN_Il-76.jpg" alt="United Nations Ilyushin Il-76" loading="lazy">
+  <div class="face">
+    <h2>Ilyushin Il-76 · UR-UCU</h2>
+    <p class="airline">United Nations</p>
+    <p class="model">Herpa · 1:500 · 513661</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 513661. Ліврея / серія: Ліврея ООН, у комплекті 2 автомобілі ООН.</span><span class="en">Herpa die-cast model, scale 1:500. Item number 513661. Livery / edition: United Nations livery, includes 2 UN support vehicles.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Ilyushin Il-76 з реєстрацією UR-UCU, експлуатант United Nations.</span><span class="en">Yes — models the real Ilyushin Il-76 registered UR-UCU, operated by United Nations.</span></p>
+    <p><a href="img/513661_UN_Il-76.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="rossiya – special flight detachment (presidential aircraft) ilyushin il-96-300 ra-96016 herpa · 1:500 · 505024">
+  <img src="img/505024_Rossiya_Il-96-300_Presidential.jpg" alt="Rossiya – Special Flight Detachment (Presidential Aircraft) Ilyushin Il-96-300" loading="lazy">
+  <div class="face">
+    <h2>Ilyushin Il-96-300 · RA-96016</h2>
+    <p class="airline">Rossiya – Special Flight Detachment (Presidential Aircraft)</p>
+    <p class="model">Herpa · 1:500 · 505024</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 505024. Ліврея / серія: Президентський борт (спецзагін «Росія»).</span><span class="en">Herpa die-cast model, scale 1:500. Item number 505024. Livery / edition: Russian Presidential Aircraft (Special Flight Detachment).</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Ilyushin Il-96-300 з реєстрацією RA-96016, експлуатант Rossiya – Special Flight Detachment (Presidential Aircraft). RA-96016 — Іл-96-300ПУ спеціального льотного загону «Росія» (урядовий / президентський транспорт).</span><span class="en">Yes — models the real Ilyushin Il-96-300 registered RA-96016, operated by Rossiya – Special Flight Detachment (Presidential Aircraft). RA-96016 is an Ilyushin Il-96-300PU operated by the Rossiya Special Flight Detachment (Russian government / presidential transport).</span></p>
+    <p><a href="img/505024_Rossiya_Il-96-300_Presidential.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="air ukraine tupolev tu-134a ur-65757 herpa · 1:500 · 510905">
+  <img src="img/510905_AirUkraine_Tu-134A.jpg" alt="Air Ukraine Tupolev Tu-134A" loading="lazy">
+  <div class="face">
+    <h2>Tupolev Tu-134A · UR-65757</h2>
+    <p class="airline">Air Ukraine</p>
+    <p class="model">Herpa · 1:500 · 510905</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 510905.</span><span class="en">Herpa die-cast model, scale 1:500. Item number 510905.</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Tupolev Tu-134A з реєстрацією UR-65757, експлуатант Air Ukraine.</span><span class="en">Yes — models the real Tupolev Tu-134A registered UR-65757, operated by Air Ukraine.</span></p>
+    <p><a href="img/510905_AirUkraine_Tu-134A.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+<article class="card" tabindex="0" data-search="kavminvodyavia (kmv) tupolev tu-154m ra-85746 herpa · 1:500 · 515320">
+  <img src="img/515320_KMV_Tu-154M.jpg" alt="Kavminvodyavia (KMV) Tupolev Tu-154M" loading="lazy">
+  <div class="face">
+    <h2>Tupolev Tu-154M · RA-85746</h2>
+    <p class="airline">Kavminvodyavia (KMV)</p>
+    <p class="model">Herpa · 1:500 · 515320</p>
+  </div>
+  <div class="details">
+    <p><b class="uk">Модель:</b><b class="en">Model:</b>
+      <span class="uk">Металева колекційна модель Herpa, масштаб 1:500. Артикул 515320. Ліврея / серія: Історична ліврея КМВ (авіакомпанія припинила роботу).</span><span class="en">Herpa die-cast model, scale 1:500. Item number 515320. Livery / edition: Historic Kavminvodyavia (KMV) livery (airline no longer operating).</span></p>
+    <p><b class="uk">Реальний прототип:</b><b class="en">Real prototype:</b>
+      <span class="uk">Так — модель реального літака Tupolev Tu-154M з реєстрацією RA-85746, експлуатант Kavminvodyavia (KMV).</span><span class="en">Yes — models the real Tupolev Tu-154M registered RA-85746, operated by Kavminvodyavia (KMV).</span></p>
+    <p><a href="img/515320_KMV_Tu-154M.jpg" target="_blank"><span class="uk">Відкрити фото</span><span class="en">Open photo</span> ↗</a></p>
+  </div>
+</article>
+</main>
+<nav class="pager" id="pager"></nav>
+<script>
+const ph={uk:'Пошук: авіакомпанія, тип, реєстрація…',en:'Search airline, type, registration…'};
+function setLang(l){document.body.dataset.lang=l;document.documentElement.lang=l;
+  document.getElementById('q').placeholder=ph[l];localStorage.setItem('lang',l);
+  document.querySelectorAll('.langs button').forEach(b=>b.classList.toggle('on',b.dataset.l===l));}
+document.querySelectorAll('.langs button').forEach(b=>b.onclick=()=>setLang(b.dataset.l));
+setLang(localStorage.getItem('lang')||'uk');
+// пагінація: 8 карток на сторінку (4×2), разом із пошуком
+const PER=8, cards=[...document.querySelectorAll('.card')];
+let page=1;
+function render(){const q=document.getElementById('q').value.toLowerCase();
+  const hits=cards.filter(c=>c.dataset.search.includes(q));
+  const pages=Math.max(1,Math.ceil(hits.length/PER)); page=Math.min(page,pages);
+  cards.forEach(c=>{c.style.display='none';c.classList.remove('open');});
+  hits.slice((page-1)*PER,page*PER).forEach(c=>c.style.display='');
+  const l=document.body.dataset.lang, nav=document.getElementById('pager'); nav.innerHTML='';
+  const btn=(t,p,dis,on)=>{const b=document.createElement('button');b.textContent=t;b.disabled=dis;
+    if(on)b.classList.add('on');b.onclick=()=>{page=p;render();window.scrollTo({top:0,behavior:'smooth'});};nav.appendChild(b);};
+  btn('‹',page-1,page===1);
+  for(let i=1;i<=pages;i++)btn(String(i),i,false,i===page);
+  btn('›',page+1,page===pages);
+  const info=document.createElement('span');info.className='info';
+  info.textContent=hits.length?(l==='uk'?`${(page-1)*PER+1}–${Math.min(page*PER,hits.length)} з ${hits.length}`
+    :`${(page-1)*PER+1}–${Math.min(page*PER,hits.length)} of ${hits.length}`):(l==='uk'?'Нічого не знайдено':'Nothing found');
+  nav.appendChild(info);}
+document.getElementById('q').addEventListener('input',()=>{page=1;render();});
+document.querySelectorAll('.langs button').forEach(b=>b.addEventListener('click',render));
+render();
+// на сенсорних екранах — відкриття картки дотиком
+document.querySelectorAll('.card').forEach(c=>c.addEventListener('click',ev=>{
+  if(ev.target.closest('a'))return;
+  if(matchMedia('(hover: none)').matches){const o=c.classList.contains('open');
+    document.querySelectorAll('.card.open').forEach(x=>x.classList.remove('open'));if(!o)c.classList.add('open');}}));
+</script></body></html>
